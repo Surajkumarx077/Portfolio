@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Suraj Kumar</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="dark-theme">
+    <div id="navbar-placeholder"></div>
+
+    <main class="main-content">
+        <section class="projects-section">
+            <div class="container">
+                <h1 class="section-title slide-up">My <span class="text-gradient">Projects</span></h1>
+                <p class="section-subtitle slide-up-delay-1">A selection of some of the things I've built recently.</p>
+                
+                <div class="projects-filter slide-up-delay-2">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+                    <button class="filter-btn" data-filter="ui">UI/UX</button>
+                </div>
+
+                <div class="projects-grid" id="projects-container">
+                    <!-- Projects will be dynamically inserted here via JS -->
+                    <div style="text-align:center; padding:50px; grid-column: 1/-1;">Loading projects...</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="../js/theme.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/projects.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
